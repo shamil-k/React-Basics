@@ -1,26 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-import { useState } from 'react';
+import React from 'react'
+import './style.css'
+export default function App() {
+    const fname = {Result}
+    return (
+        <div style={{ display: 'inline' }}>
+            {fname.map((itm) => (
 
-function App() {
-  const [input, setInput] = useState("")
-  const handleEvent = (event) => {
-    setInput(event.target.value);
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                            <img
+                                src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
+                                alt="Avatar"
+                                style={{ width: 300, height: 300 }}
+                            />
+                        </div>
+                        <div className="flip-card-back">
+                            <h1>{itm}</h1>
+                            <p>Architect &amp; Engineer</p>
+                            <p>We love that guy</p>
+                        </div>
+                    </div>
+                </div>
 
-  }
-  const sum = () => {
-    alert("clicked me ")
-  }
 
-  return (
-    <>
-      <h1>sgadf</h1>
-      <input type="text" onChange={handleEvent} name="name" placeholder='Enter your name' />
-      <button onClick={sum}>Click me</button>
-      <br></br>
-      {input}
-    </>
-  );
+
+            ))
+            }
+        </div >
+    )
 }
-
-export default App;
