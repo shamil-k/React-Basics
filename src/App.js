@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 export default function App() {
-    const fname = {Result}
+    const fname = [1]
     return (
         <div style={{ display: 'inline' }}>
             {fname.map((itm) => (
