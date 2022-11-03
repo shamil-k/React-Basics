@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ApiFetching from './componenets/ApiFetching';
+import Sample from './componenets/Sample';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  
-  <ApiFetching/>
- 
+
+  <App />
+  // <ApiFetching />
+  // <Sample/>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
